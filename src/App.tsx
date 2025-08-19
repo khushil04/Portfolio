@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Menu, X, ExternalLink, Code, Briefcase, User, FileText, Download, Award, BookOpen, Facebook, Instagram, GraduationCap } from 'lucide-react';
+import { Github, Linkedin, Mail, Menu, X, ExternalLink, Code, Briefcase, User, FileText, Download, Award, BookOpen, Facebook, Instagram, GraduationCap, Images } from 'lucide-react';
 import Background3D from './components/Background3D';
 import TypewriterText from './components/TypewriterText';
 import chemicalStore from "./assets/chemicalStore.png"
 import cv from "./assets/Cv_khushil.pdf"
-import img from "./assets/khushil_image.jpg"
+import img from "./assets/khushil_image2.jpg"
 import certificate from "./assets/Cloud_Computing.pdf"
 import nptel from "./assets/nptel.png"
 import mern from "./assets/mern.png"
 import android from "./assets/android.png"
-import gems from "./assets/gems.png"
+import instaverse from "./assets/instaverse.png"
 import preorder from "./assets/preorder.png"
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
     {
       title: "SafeChemicalStore",
       description: "A full-stack e-commerce website for selling chemicals in small and large quantities.",
-      tech: ["React", "Mysql", "MongoDB", "Tailwind CSS",""],
-      link: "https://github.com/khushil04/SafeChemicalStore",
+      tech: ["React", "Mysql", "Laravel", "Tailwind CSS","TypeScript"],
+      link: "https://safechemicalstore.netlify.app/home",
       image: chemicalStore
     },
     {
@@ -49,11 +49,11 @@ function App() {
       image: preorder
     },
     {
-      title: "GemPriceScout",
-      description: "Use Firebase Cloud Messaging to send push notifications when backend detects a drop in a user's selected gemstone price. ",
-      tech: ["React", "OpenWeather API", "Chart.js"],
-  
-      image: gems
+      title: "INSTAVERSE",
+      description: "A full-stack social media platform inspired by Instagram",
+      tech: ["JavaSpringBoot", "React", "Tailwind CSS","TypeScript"],
+      link: "https://github.com/khushil04/Social-Media-Platfrom#",
+      image: instaverse
     }
   ];
 
@@ -71,7 +71,7 @@ function App() {
       school: "Lovely professional university",
       year: "Currently Pursuing",
       description: "Focus on Full Stack Development and Android Development",
-      icon: <GraduationCap className="w-8 h-8 text-cyan-400" />git
+      icon: <GraduationCap className="w-8 h-8 text-cyan-400" />
    
     }
   ];
@@ -240,7 +240,7 @@ function App() {
             </div>
             <div className="flex justify-center animate-float">
               <div className="profile-glow rounded-full">
-              <img src={img} alt="khushil_image" className="w-52 h-53 object-cover mb-4 rounded-full" />
+              <img src={img} alt="khushil_image" className="w-52 h-55 object-cover mb-4 rounded-full" />
               </div>
             </div>
           </div>
@@ -400,6 +400,19 @@ function App() {
               <h3 className="text-xl font-semibold mb-4 text-cyan-400">Tools & Technologies</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.tools.map((skill, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="skill-card glass-card p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-cyan-400">Android Development</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.android.map((skill, index) => (
                   <span
                     key={index}
                     className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm"
