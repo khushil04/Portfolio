@@ -82,7 +82,7 @@ function App() {
       organization: "NPTEL Swayam",
       date: "2024",
       icon: <Award className="w-8 h-8 text-cyan-400" />,
-      skills: ["Cloud Architecture", "AWS Services"],
+      skills: ["Cloud Architecture"],
       image: nptel
       
     },
@@ -100,7 +100,7 @@ function App() {
       organization: "Cousera",
       date: "2024",
       icon: <BookOpen className="w-8 h-8 text-cyan-400" />,
-      skills: ["UI/UX Design", "Figma", "User Research"],
+      skills: ["xml", "kotlin"],
       
       image: android
     }
